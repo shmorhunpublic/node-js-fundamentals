@@ -1,0 +1,48 @@
+{
+  "name": "node-nodejs-basics",
+  "version": "1.0.0",
+  "description": "This repository is the part of nodejs-assignments https://github.com/AlreadyBored/nodejs-assignments",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "cli:args": "node dist/cli/args.js --some-arg value1 --other 1337 --arg2 42",
+    "cli:env": "npx cross-env SOME=any RSS_foo=bar RSS_bar=baz node dist/cli/env.js",
+    "cp": "node dist/cp/cp.js",
+    "fs:copy": "node dist/fs/copy.js",
+    "fs:create": "node dist/fs/create.js",
+    "fs:delete": "node dist/fs/delete.js",
+    "fs:list": "node dist/fs/list.js",
+    "fs:read": "node dist/fs/read.js",
+    "fs:rename": "node dist/fs/rename.js",
+    "hash": "node dist/hash/calcHash.js",
+    "modules": "node dist/modules/esm.js",
+    "streams:read": "node dist/streams/read.js",
+    "streams:transform": "node dist/streams/transform.js",
+    "streams:write": "node dist/streams/write.js",
+    "wt": "node dist/wt/main.js",
+    "zip:compress": "node dist/zip/compress.js",
+    "zip:decompress": "node dist/zip/decompress.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlreadyBored/node-nodets-basics.git"
+  },
+  "keywords": [
+    "nodets",
+    "assignments",
+    "alreadybored"
+  ],
+  "author": "alreadybored",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlreadyBored/node-nodets-basics/issues"
+  },
+  "homepage": "https://github.com/AlreadyBored/node-nodets-basics#readme",
+  "devDependencies": {
+    "@types/node": "^20.11.5",
+    "typescript": "^5.3.3"
+  }
+}
