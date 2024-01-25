@@ -8,9 +8,8 @@ export const messages = {
 export const contents = {
   fs: {
     create: "I am fresh and young",
+    copy: "Folder copied successfully.",
   },
 };
-
-
 
 export const paths = { fs: ["fs", "files"] };
