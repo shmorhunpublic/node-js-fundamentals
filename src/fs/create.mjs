@@ -11,9 +11,9 @@ import { contents, messages } from "../utils/messages/messages.mjs";
  * * @returns {Promise<void>} Create file on the file path or throw an error
  */
 
-const create = async () => {
+const create = async (fileName) => {
   // Generating the file path
-  const filePath = createFilePath(import.meta.url, PATHS.CREATE);
+  const filePath = createFilePath(import.meta.url, PATHS.FILES_DIR(fileName));
 
   try {
     // Checking if the file already exists
@@ -30,7 +30,7 @@ const create = async () => {
 
       // Information about the created file
       const fileInfo = {
-        "File Name": path.basename(filePath),
+        "File created": path.basename(filePath),
         Address: filePath,
         Content: content,
       };
@@ -45,4 +45,4 @@ const create = async () => {
 };
 
 // Executing the create function and handling potential errors
-create().catch((err) => console.error(err.message));
+create("fresh.txt").catch((err) => console.error(err.message));

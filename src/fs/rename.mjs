@@ -13,11 +13,11 @@ async function renameFile(oldFileName, newFileName) {
   try {
     const oldFilePath = createFilePath(
       import.meta.url,
-      PATHS.RENAME_FROM(oldFileName)
+      PATHS.FILES_DIR(oldFileName)
     );
     const newFilePath = createFilePath(
       import.meta.url,
-      PATHS.RENAME_TO(newFileName)
+      PATHS.FILES_DIR(newFileName)
     );
 
     // Check if the old file exists
@@ -43,7 +43,7 @@ const oldFileName = contents.fs.rename.old;
 const newFileName = contents.fs.rename.new;
 
 renameFile(oldFileName, newFileName)
-  .then(() => console.log(messages.success.rename))
+  .then(() => console.log(messages.success.rename(oldFileName, newFileName)))
   .catch((err) => console.error(err.message));
 
 // to rename back to old name => renameFile(newFileName, oldFileName)

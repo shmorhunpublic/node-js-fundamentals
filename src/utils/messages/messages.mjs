@@ -5,7 +5,9 @@ export const messages = {
   },
   success: {
     copy: "Folder copied successfully.",
-    rename: "File renamed successfully.",
+    rename: (oldName, newName) =>
+      `File ${oldName} renamed to ${newName} successfully.`,
+    delete: (fileName) => `File ${fileName} deleted successfully.`,
   },
 };
 
@@ -16,5 +18,6 @@ export const contents = {
       old: "wrongFilename.txt",
       new: "properFilename.md",
     },
+    delete: "fileToRemove.txt",
   },
 };
