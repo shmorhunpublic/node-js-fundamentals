@@ -16,7 +16,7 @@ async function read(fileName) {
 
     // Read the file and print its content
     const content = await fs.readFile(filePath, "utf8");
-    console.log("Content of the file:", content);
+    console.log(messages.success.read, content);
   } catch (error) {
     if (error.code === ERRORS.ENOENT) {
       throw new Error(messages.errors.fs);
