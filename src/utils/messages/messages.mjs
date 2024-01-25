@@ -3,6 +3,7 @@ export const messages = {
     fs: "FS operation failed",
     dir: "Error reading directory",
     fileRead: "Error reading file:",
+    writeFile: "Error writing to the file:",
   },
   success: {
     copy: "Folder copied successfully.",
@@ -12,6 +13,8 @@ export const messages = {
     list: "Files in the directory:",
     read: "Content of the file:",
     hash: (fileName) => `SHA256 Hash of ${fileName}:`,
+    read: "File read successfully.",
+    written: (filePath) => `Data has been written to ${filePath}`,
   },
 };
 
@@ -27,4 +30,11 @@ export const contents = {
     read: "fileToRead.txt",
   },
   hash: "fileToCalculateHashFor.txt",
+  stream: {
+    read: "fileToRead.txt",
+    write: {
+      start: "Start typing to write to the file. Press Ctrl+C to end.",
+      fileName: "fileToWrite.txt",
+    },
+  },
 };
