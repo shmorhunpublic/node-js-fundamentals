@@ -2,6 +2,7 @@ export const messages = {
   errors: {
     fs: "FS operation failed",
     dir: "Error reading directory",
+    fileRead: "Error reading file:",
   },
   success: {
     copy: "Folder copied successfully.",
@@ -10,6 +11,7 @@ export const messages = {
     delete: (fileName) => `File ${fileName} deleted successfully.`,
     list: "Files in the directory:",
     read: "Content of the file:",
+    hash: (fileName) => `SHA256 Hash of ${fileName}:`,
   },
 };
 
@@ -24,4 +26,5 @@ export const contents = {
     list: "files",
     read: "fileToRead.txt",
   },
+  hash: "fileToCalculateHashFor.txt",
 };
