@@ -2,7 +2,7 @@ import fs from "fs/promises";
 import path from "path";
 import { createFilePath } from "../utils/functions/createFilePath.mjs";
 import { ERRORS, PATHS } from "../utils/constants/constants.mjs";
-import { messages, contents } from "../utils/messages/messages.mjs";
+import { messages } from "../utils/messages/messages.mjs";
 
 /**
  * Copy all contents of a directory to another directory.
@@ -52,5 +52,5 @@ const srcDirectoryPath = createFilePath(import.meta.url, PATHS.COPY_PATH);
 const destDirectoryPath = createFilePath(import.meta.url, PATHS.COPY_TO);
 
 copy(srcDirectoryPath, destDirectoryPath)
-  .then(() => console.log(contents.fs.copy))
+  .then(() => console.log(messages.success.copy))
   .catch((err) => console.error(err.message));
