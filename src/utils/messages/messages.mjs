@@ -9,6 +9,7 @@ export const messages = {
       `File ${oldName} renamed to ${newName} successfully.`,
     delete: (fileName) => `File ${fileName} deleted successfully.`,
     list: "Files in the directory:",
+    read: "Content of the file:",
   },
 };
 
@@ -21,5 +22,6 @@ export const contents = {
     },
     delete: "fileToRemove.txt",
     list: "files",
+    read: "fileToRead.txt",
   },
 };
