@@ -8,7 +8,8 @@ import { contents, messages } from "../utils/messages/messages.mjs";
  * Creates a new file with predefined content.
  * If the file already exists, throws an error.
  * Logs file information upon successful creation.
- * * @returns {Promise<void>} Create file on the file path or throw an error
+ * @param {string} fileName - The file name to create.
+ * @returns {Promise<void>} - Create file on the file path or throw an error.
  */
 
 const create = async (fileName) => {
@@ -24,7 +25,7 @@ const create = async (fileName) => {
     // Checking if the error is because the file doesn't exist
     if (error.code === ERRORS.ENOENT) {
       // Defining content for the new file
-      const content = contents.fs.create;
+      const content = contents.fs.create.content;
       // Writing content to the new file
       await fs.writeFile(filePath, content);
 
@@ -45,4 +46,4 @@ const create = async (fileName) => {
 };
 
 // Executing the create function and handling potential errors
-create("fresh.txt").catch((err) => console.error(err.message));
+create(contents.fs.create.fileName).catch((err) => console.error(err.message));
