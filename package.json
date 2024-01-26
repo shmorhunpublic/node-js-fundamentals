@@ -26,7 +26,8 @@
     "streams:write": "node src/streams/write.mjs",
     "wt": "node src/wt/main.mjs",
     "zip:compress": "node src/zip/compress.mjs",
-    "zip:decompress": "node src/zip/decompress.mjs"
+    "zip:decompress": "node src/zip/decompress.mjs",
+    "cross-check": "node src/utils/scripts/calculateResult.mjs"
   },
   "repository": {
     "type": "git",
