@@ -4,6 +4,7 @@ export const messages = {
     dir: "Error reading directory",
     fileRead: "Error reading file:",
     writeFile: "Error writing to the file:",
+    transform: "Error in transform:",
   },
   success: {
     copy: "Folder copied successfully.",
