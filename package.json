@@ -10,6 +10,7 @@
     "build": "tsc",
     "cli:args": "node src/cli/args.mjs --some-arg value1 --other 1337 --arg2 42",
     "cli:env": "npx cross-env SOME=any RSS_foo=bar RSS_bar=baz node src/cli/env.mjs",
+    "cli:all": "npm run cli:args && npm run cli:env",
     "cp": "node src/cp/cp.mjs",
     "fs:copy": "node src/fs/copy.mjs",
     "fs:create": "node src/fs/create.mjs",

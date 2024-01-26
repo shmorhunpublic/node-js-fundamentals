@@ -16,6 +16,8 @@ export const messages = {
     hash: (fileName) => `SHA256 Hash of ${fileName}:`,
     read: "File read successfully.",
     written: (filePath) => `Data has been written to ${filePath}`,
+    compress: (inputFile, outputFile) =>
+      `${inputFile} has been compressed to ${outputFile}`,
   },
 };
 
