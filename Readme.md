@@ -1,5 +1,7 @@
 # Node.js basics
 
+!!PLEASE READ IT FIRST !! THEN CHECK!!
+
 ## Made by Andrew Shmorhun
 
 ## USE `cross-check.md` and after task check run `npm run cross-check` or `yarn cross-check` to calculate total result!
@@ -8,7 +10,7 @@
 
 **Assignment in the `task.md`**
 
-### How to check fast
+### How to check faster
 
 - FS
   Run script `npm run fs:all` or `yarn fs:all`, it will run all fs scripts..
