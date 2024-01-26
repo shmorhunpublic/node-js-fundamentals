@@ -5,6 +5,8 @@ export const messages = {
     fileRead: "Error reading file:",
     writeFile: "Error writing to the file:",
     transform: "Error in transform:",
+    compress: "Error during compression:",
+    decompress: "Error during decompression:",
   },
   success: {
     copy: "Folder copied successfully.",
@@ -18,6 +20,8 @@ export const messages = {
     written: (filePath) => `Data has been written to ${filePath}`,
     compress: (inputFile, outputFile) =>
       `${inputFile} has been compressed to ${outputFile}`,
+    decompress: (inputFile, outputFile) =>
+      `${inputFile} has been decompressed to to ${outputFile}`,
   },
 };
 
@@ -39,5 +43,9 @@ export const contents = {
       start: "Start typing to write to the file. Press Ctrl+C to end.",
       fileName: "fileToWrite.txt",
     },
+  },
+  zip: {
+    gz: "archive.gz",
+    txt: "fileToCompress.txt",
   },
 };

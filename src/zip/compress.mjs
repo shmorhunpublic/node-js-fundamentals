@@ -40,4 +40,6 @@ const compress = async (inputFile, outputFile) => {
 const inputFile = "fileToCompress.txt";
 const outputFile = "archive.gz";
 
-await compress(inputFile, outputFile);
+await compress(inputFile, outputFile).catch((err) =>
+  console.error(messages.errors.compress, err)
+);
