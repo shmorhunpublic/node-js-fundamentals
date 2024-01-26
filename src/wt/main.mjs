@@ -1,6 +1,7 @@
 import { Worker } from "worker_threads";
 import os from "os";
 import { createFilePath } from "../utils/functions/createFilePath.mjs";
+
 // import { workerPath } from "./worker.mjs";
 /**
  * Performs calculations using worker threads.

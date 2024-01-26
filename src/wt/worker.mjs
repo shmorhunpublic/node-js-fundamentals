@@ -1,5 +1,4 @@
 import { parentPort } from "worker_threads";
-import { createFilePath } from "../utils/functions/createFilePath.mjs";
 
 // Function to compute the nth Fibonacci number
 const nthFibonacci = (n) =>

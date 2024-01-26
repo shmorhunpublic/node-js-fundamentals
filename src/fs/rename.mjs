@@ -1,4 +1,3 @@
-// rename.mjs
 import fs from "fs/promises";
 import { createFilePath } from "../utils/functions/createFilePath.mjs";
 import { ERRORS, PATHS } from "../utils/constants/constants.mjs";

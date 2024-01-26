@@ -12,5 +12,6 @@
 
 - FS
   Run script `npm run fs:all` or `yarn fs:all`, it will run all fs scripts..
+
 - CLI
-  Run script `npm run cli:all` or `yarn cli:all`, it will run all fs scripts..
+  Run script `npm run cli:all` or `yarn cli:all`, it will run all cli scripts..
