@@ -9,7 +9,7 @@ import { contents, messages } from "../utils/messages/messages.mjs";
  * @param {string} oldFileName The incorrect or old file name.
  * @param {string} newFileName The correct or new file name with extension.
  */
-async function renameFile(oldFileName, newFileName) {
+async function rename(oldFileName, newFileName) {
   try {
     const oldFilePath = createFilePath(
       import.meta.url,
@@ -42,7 +42,7 @@ async function renameFile(oldFileName, newFileName) {
 const oldFileName = contents.fs.rename.old;
 const newFileName = contents.fs.rename.new;
 
-renameFile(oldFileName, newFileName)
+rename(oldFileName, newFileName)
   .then(() => console.log(messages.success.rename(oldFileName, newFileName)))
   .catch((err) => console.error(err.message));
 
